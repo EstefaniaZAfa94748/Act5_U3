@@ -1,4 +1,4 @@
-import 'package:_food_delivery_ui_practice/models/food.dart';
+import 'package:_food_delivery_ui_practice/models/alimento.dart';
 import 'package:_food_delivery_ui_practice/models/restaurant.dart';
 
 class Order {

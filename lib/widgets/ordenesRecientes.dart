@@ -1,5 +1,5 @@
 import 'package:_food_delivery_ui_practice/data/data.dart';
-import 'package:_food_delivery_ui_practice/models/order.dart';
+import 'package:_food_delivery_ui_practice/models/orden.dart';
 import 'package:flutter/material.dart';
 
 class RecentOrders extends StatelessWidget {
@@ -13,7 +13,7 @@ class RecentOrders extends StatelessWidget {
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.0),
           child: Text(
-            "Recent Orders",
+            "Ordenes Recientes",
             style: TextStyle(
                 fontSize: 24, fontWeight: FontWeight.w600, letterSpacing: 1.2),
           ),

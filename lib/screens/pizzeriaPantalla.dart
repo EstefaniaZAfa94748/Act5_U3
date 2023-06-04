@@ -1,4 +1,4 @@
-import 'package:_food_delivery_ui_practice/models/food.dart';
+import 'package:_food_delivery_ui_practice/models/alimento.dart';
 import 'package:_food_delivery_ui_practice/models/restaurant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -64,7 +64,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                   ),
                   Text(
-                    "0.2 miles away",
+                    "Sucursal a 5 min",
                     style: TextStyle(fontSize: 16),
                   )
                 ],
@@ -105,7 +105,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                       borderRadius: BorderRadius.circular(12)),
                   onPressed: () {},
                   child: Text(
-                    "Reviews",
+                    "Reseñas",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   )),
               MaterialButton(
@@ -117,7 +117,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                       borderRadius: BorderRadius.circular(12)),
                   onPressed: () {},
                   child: Text(
-                    "Contact",
+                    "Contactos",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ))
             ],

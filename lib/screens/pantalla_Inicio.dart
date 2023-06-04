@@ -1,11 +1,11 @@
 import 'package:_food_delivery_ui_practice/data/data.dart';
 import 'package:_food_delivery_ui_practice/models/restaurant.dart';
-import 'package:_food_delivery_ui_practice/screens/cart_screen.dart';
-import 'package:_food_delivery_ui_practice/screens/restaurant_screen.dart';
+import 'package:_food_delivery_ui_practice/screens/carrito.dart';
+import 'package:_food_delivery_ui_practice/screens/pizzeriaPantalla.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-import '../widgets/recent_order.dart';
+import '../widgets/ordenesRecientes.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        title: const Text("Food Genie"),
+        title: const Text("PIZZERIA"),
         backgroundColor: Colors.deepOrangeAccent,
         centerTitle: true,
         leading: IconButton(
@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () => Navigator.push(context,
                   MaterialPageRoute(builder: (context) => CartScreen())),
               child: Text(
-                "Cart (${currentUser.cart.length})",
+                "Carrito (${currentUser.cart.length})",
                 style: const TextStyle(color: Colors.white, fontSize: 20),
               ))
         ],
@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       borderRadius: BorderRadius.circular(30),
                       borderSide: const BorderSide(
                           width: 0.8, color: Colors.deepOrangeAccent)),
-                  hintText: "Search Food or Restaurants",
+                  hintText: "Buscador de la pizzeria",
                   prefixIcon: const Icon(Icons.search),
                   suffixIcon: IconButton(
                       onPressed: () {}, icon: const Icon(Icons.clear))),
@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
-                  "Nearby Restaurants",
+                  "Pizzas",
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.w600,

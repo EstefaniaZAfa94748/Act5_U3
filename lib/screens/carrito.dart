@@ -1,5 +1,5 @@
 import 'package:_food_delivery_ui_practice/data/data.dart';
-import 'package:_food_delivery_ui_practice/models/order.dart';
+import 'package:_food_delivery_ui_practice/models/orden.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatefulWidget {
@@ -19,7 +19,7 @@ class _CartScreenState extends State<CartScreen> {
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
-        title: Text("Cart (${currentUser.cart.length})"),
+        title: Text("Carrito (${currentUser.cart.length})"),
         centerTitle: true,
         backgroundColor: Colors.deepOrangeAccent,
       ),
@@ -38,14 +38,14 @@ class _CartScreenState extends State<CartScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Estimate Total Time",
+                        "Tiempo total estimado",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 18,
                             fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        "25 min",
+                        "50 min",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 18,
@@ -58,7 +58,7 @@ class _CartScreenState extends State<CartScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Total Cost",
+                        "Total a pagar",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 18,
@@ -88,7 +88,7 @@ class _CartScreenState extends State<CartScreen> {
         ]),
         child: Center(
           child: Text(
-            "CHECKOUT",
+            "VERIFICAR",
             style: TextStyle(
                 color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
           ),
